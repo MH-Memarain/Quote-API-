@@ -15,8 +15,7 @@ const Generate_Text =()=>{
     })
     .then(res=>{
         title.innerHTML = 'ADVICE # ' + res.id
-        quote.innerHTML = res.advice  
-        console.log(res.advice)
+        quote.innerHTML = res.advice          
     })
 }
 // call Generate_Text and get random quote in api
