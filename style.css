@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color : hsl(218, 23%, 16%);
+    height: 100vh;    
+}
+@font-face {
+    font-family: "Manrope";
+    src: url(Font/Manrope-VariableFont_wght.ttf);
+}
+.quote-container{
+    background-color: hsl(217, 19%, 24%);    
+    width: 550px;
+    margin: 0px 20px;
+    min-height: 365px;
+    border-radius: 10px;    
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    gap: 20px;
+    position: relative;
+}
+#number_qute{
+    color:  hsl(150, 100%, 66%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Manrope";    
+    letter-spacing: 5px;
+    font-weight: 800;
+}
+#quote{
+    font-size: 30px ;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    color: hsl(193, 38%, 86%);
+    font-family: "Manrope";
+    font-weight: 800;
+}
+#sider{
+    background-image: url(images/pattern-divider-desktop.svg);
+    background-repeat: no-repeat;    
+    background-position-x: center;
+    background-position-y: center;  
+}
+#genarate{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;     
+    bottom: -25px;
+    left: 44%;    
+    border: 0;
+    background-color: hsl(150, 100%, 66%);
+    background-image: url(images/icon-dice.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;  
+    background-position-y: center;  
+    cursor: pointer;
+}
+#genarate:hover{
+    box-shadow:hsl(150, 100%, 66%) 0px 0px 20px 1px;
+}
